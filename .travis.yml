@@ -3,7 +3,7 @@ arch:
   - amd64
   - arm64
 
-python: 3.6
+python: 3.5
 cache:
   pip: true
   directories:
