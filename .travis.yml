@@ -1,11 +1,9 @@
 language: python
-
-python:
-  - "3.6"
- arch:
+arch:
   - amd64
   - arm64
 
+python: 3.6
 cache:
   pip: true
   directories:
