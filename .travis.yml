@@ -4,7 +4,6 @@ arch:
   - arm64
 
 python:
-  - "2.7"
   - "3.7"
   - "3.8"
   - "3.9"
@@ -14,14 +13,13 @@ cache:
     - $HOME/.cache/pypoetry
 
 install:
-  - pip install fakeredis
+  # `- pip install fakeredis
   - curl -fsS -o get-poetry.py https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py
   - python get-poetry.py --preview -y
   - source $HOME/.poetry/env
-  - poetry install 
-  #--extras memcached
+  - poetry install --extras memcached
 
 script: poetry run pytest tests/
 
-#services:
- # - memcached
+services:
+  - memcached
