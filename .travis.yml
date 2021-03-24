@@ -18,7 +18,8 @@ install:
   #- source $HOME/.poetry/env
   #- poetry install --extras memcached
 
-script: python -m pytest tests/
+script: tox
+#python -m pytest tests/
 
 #services:
  # - memcached
