@@ -31,4 +31,5 @@ msgpack = ["msgpack-python"]
 pytest = "^4.6"
 pytest-mock = "^1.10.4"
 flexmock = "^0.10.4"
-fakeredis = {git = "https://github.com/jamesls/fakeredis.git"}
+fakeredis = "1.2.0"
+#{git = "https://github.com/jamesls/fakeredis.git"}
