@@ -17,7 +17,6 @@ install:
   - python get-poetry.py --preview -y
   - source $HOME/.poetry/env
   - python --version
-  - fakeredis --version
   - poetry install --extras memcached
 
 script: python -m pytest tests/
